@@ -24,33 +24,33 @@
 
 package com.github.hujiaweibujidao.library;
 
-import com.github.hujiaweibujidao.library.easing.back.BackEaseIn;
-import com.github.hujiaweibujidao.library.easing.back.BackEaseInOut;
-import com.github.hujiaweibujidao.library.easing.back.BackEaseOut;
-import com.github.hujiaweibujidao.library.easing.bounce.BounceEaseIn;
-import com.github.hujiaweibujidao.library.easing.bounce.BounceEaseInOut;
-import com.github.hujiaweibujidao.library.easing.bounce.BounceEaseOut;
-import com.github.hujiaweibujidao.library.easing.circ.CircEaseIn;
-import com.github.hujiaweibujidao.library.easing.circ.CircEaseInOut;
-import com.github.hujiaweibujidao.library.easing.circ.CircEaseOut;
-import com.github.hujiaweibujidao.library.easing.cubic.CubicEaseIn;
-import com.github.hujiaweibujidao.library.easing.cubic.CubicEaseInOut;
-import com.github.hujiaweibujidao.library.easing.cubic.CubicEaseOut;
-import com.github.hujiaweibujidao.library.easing.elastic.ElasticEaseIn;
-import com.github.hujiaweibujidao.library.easing.elastic.ElasticEaseOut;
-import com.github.hujiaweibujidao.library.easing.expo.ExpoEaseIn;
-import com.github.hujiaweibujidao.library.easing.expo.ExpoEaseInOut;
-import com.github.hujiaweibujidao.library.easing.expo.ExpoEaseOut;
-import com.github.hujiaweibujidao.library.easing.linear.Linear;
-import com.github.hujiaweibujidao.library.easing.quad.QuadEaseIn;
-import com.github.hujiaweibujidao.library.easing.quad.QuadEaseInOut;
-import com.github.hujiaweibujidao.library.easing.quad.QuadEaseOut;
-import com.github.hujiaweibujidao.library.easing.quint.QuintEaseIn;
-import com.github.hujiaweibujidao.library.easing.quint.QuintEaseInOut;
-import com.github.hujiaweibujidao.library.easing.quint.QuintEaseOut;
-import com.github.hujiaweibujidao.library.easing.sine.SineEaseIn;
-import com.github.hujiaweibujidao.library.easing.sine.SineEaseInOut;
-import com.github.hujiaweibujidao.library.easing.sine.SineEaseOut;
+import com.github.hujiaweibujidao.library.easing.BackEaseIn;
+import com.github.hujiaweibujidao.library.easing.BackEaseInOut;
+import com.github.hujiaweibujidao.library.easing.BackEaseOut;
+import com.github.hujiaweibujidao.library.easing.BounceEaseIn;
+import com.github.hujiaweibujidao.library.easing.BounceEaseInOut;
+import com.github.hujiaweibujidao.library.easing.BounceEaseOut;
+import com.github.hujiaweibujidao.library.easing.CircEaseIn;
+import com.github.hujiaweibujidao.library.easing.CircEaseInOut;
+import com.github.hujiaweibujidao.library.easing.CircEaseOut;
+import com.github.hujiaweibujidao.library.easing.CubicEaseIn;
+import com.github.hujiaweibujidao.library.easing.CubicEaseInOut;
+import com.github.hujiaweibujidao.library.easing.CubicEaseOut;
+import com.github.hujiaweibujidao.library.easing.ElasticEaseIn;
+import com.github.hujiaweibujidao.library.easing.ElasticEaseOut;
+import com.github.hujiaweibujidao.library.easing.ExpoEaseIn;
+import com.github.hujiaweibujidao.library.easing.ExpoEaseInOut;
+import com.github.hujiaweibujidao.library.easing.ExpoEaseOut;
+import com.github.hujiaweibujidao.library.easing.Linear;
+import com.github.hujiaweibujidao.library.easing.QuadEaseIn;
+import com.github.hujiaweibujidao.library.easing.QuadEaseInOut;
+import com.github.hujiaweibujidao.library.easing.QuadEaseOut;
+import com.github.hujiaweibujidao.library.easing.QuintEaseIn;
+import com.github.hujiaweibujidao.library.easing.QuintEaseInOut;
+import com.github.hujiaweibujidao.library.easing.QuintEaseOut;
+import com.github.hujiaweibujidao.library.easing.SineEaseIn;
+import com.github.hujiaweibujidao.library.easing.SineEaseInOut;
+import com.github.hujiaweibujidao.library.easing.SineEaseOut;
 
 /**
  * Skill是各种不同的缓动函数的枚举集合，枚举项的名称是缓动函数的名称，值是对应的缓动函数实现类 （形象比喻为采用哪种技术来操纵滑翔机）

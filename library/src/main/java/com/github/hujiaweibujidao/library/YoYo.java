@@ -37,9 +37,7 @@ import java.util.List;
  */
 public class YoYo {
 
-    private YoYo() {
-        //move the duplicate fields to Builder class, so YoYo is much simpler
-    }
+    //move the duplicate fields to Builder class, so YoYo is much simpler
 
     //YoYo类不可以new，只能通过with方法来创建，可以使用已有的某个Techniques，也可以使用自定义的animator，但是要继承自BaseViewAnimator
     public static Builder with(Technique technique) {
@@ -115,11 +113,12 @@ public class YoYo {
 
         //调用play表示动画正式开始，返回结果是可以控制动画的对象YoYoString
         public YoYoString play() {
-            return new YoYoString(start(), this.target);
+            start();
+            return new YoYoString(this.animator);
         }
 
         //builder内部的start方法，将animatorset启动
-        private BaseViewAnimator start() {
+        private void start() {
             animator.setTarget(target).setDuration(duration).setInterpolator(interpolator)
                     .setStartDelay(delay).setRest(reset).setRepeat(repeat);
 
@@ -127,8 +126,7 @@ public class YoYo {
                 animator.addAllListeners(listeners);
             }
 
-            animator.start(target);
-            return animator;
+            animator.start();
         }
     }
 
@@ -139,11 +137,9 @@ public class YoYo {
      */
     public static class YoYoString {
 
-        private View target;
         private BaseViewAnimator animator;
 
-        private YoYoString(BaseViewAnimator animator, View target) {
-            this.target = target;
+        private YoYoString(BaseViewAnimator animator) {
             this.animator = animator;
         }
 
@@ -158,9 +154,8 @@ public class YoYo {
         public void stop(boolean reset) {
             animator.cancel();
 
-            if (reset) animator.reset(target);
+            if (reset) animator.reset();
         }
-
     }
 
 }

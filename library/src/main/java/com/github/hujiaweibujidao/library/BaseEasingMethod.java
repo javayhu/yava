@@ -31,6 +31,7 @@ import java.util.Collections;
 
 /**
  * 缓动函数的抽象类，每个EasingMethod（缓动方法）实际上就是一个类型估值器（TypeEvaluator）
+ * easing包下面的所有类都继承自BaseEasingMethod
  */
 public abstract class BaseEasingMethod implements TypeEvaluator<Number> {
 
@@ -41,6 +42,21 @@ public abstract class BaseEasingMethod implements TypeEvaluator<Number> {
         mDuration = duration;
     }
 
+    @Override
+    public final Float evaluate(float fraction, Number startValue, Number endValue) {
+        float t = mDuration * fraction;//已经过去的时间
+        float b = startValue.floatValue();//起始值
+        float c = endValue.floatValue() - startValue.floatValue();//结束值与起始值之间的差值
+        float d = mDuration;//总的时间间隔，t/d 就是已经过去的时间占总时间间隔的比率
+        float result = calculate(t, b, c, d);//**不同的缓动函数计算出不同的数据值**
+
+        for (EasingUpdateListener l : mListeners) {
+            l.on(t, result, b, c, d);
+        }
+        return result;
+    }
+
+    //处理监听器
     public void addEasingListener(EasingUpdateListener l) {
         mListeners.add(l);
     }
@@ -55,20 +71,6 @@ public abstract class BaseEasingMethod implements TypeEvaluator<Number> {
 
     public void clearEasingListeners() {
         mListeners.clear();
-    }
-
-    @Override
-    public final Float evaluate(float fraction, Number startValue, Number endValue) {
-        float t = mDuration * fraction;//已经过去的时间
-        float b = startValue.floatValue();//起始值
-        float c = endValue.floatValue() - startValue.floatValue();//结束值与起始值之间的差值
-        float d = mDuration;//总的时间间隔
-        float result = calculate(t, b, c, d);//不同的缓动函数计算出不同的数据值
-
-        for (EasingUpdateListener l : mListeners) {
-            l.on(t, result, b, c, d);
-        }
-        return result;
     }
 
     //不同的缓动函数的区别就是根据这几个参数得到的下一个值不同而已

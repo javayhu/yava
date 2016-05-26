@@ -35,11 +35,13 @@ import java.util.List;
 
 /**
  * ViewAnimator的抽象基类，不同动画效果之间的差异体现在它们在动画准备阶段加入到动画集合中的动画不同
+ * animator包下的所有类都继承自BaseViewAnimator
  */
 public abstract class BaseViewAnimator {
 
     private int mRepeat;//动画重复的次数
     private boolean mRest;//动画结束之后是否恢复到原来的状态
+    private View mTarget;//动画作用的对象
     private AnimatorSet mAnimatorSet = new AnimatorSet();//动画集合
 
     protected abstract void prepare(View target);//动画准备阶段
@@ -47,9 +49,9 @@ public abstract class BaseViewAnimator {
     /**
      * start to animate
      */
-    public void start(final View target) {
-        reset(target);
-        prepare(target);
+    public void start() {
+        reset();
+        prepare(mTarget);
         if (mRepeat != 0) {
             for (Animator animator : mAnimatorSet.getChildAnimations()) {
                 ((ValueAnimator) animator).setRepeatCount(mRepeat > 0 ? mRepeat - 1 : mRepeat);//区别无穷次
@@ -60,7 +62,7 @@ public abstract class BaseViewAnimator {
             mAnimatorSet.addListener(new AnimatorListenerAdapter() {
                 @Override
                 public void onAnimationEnd(Animator animation) {
-                    reset(target);
+                    reset();
                 }
             });
         }
@@ -70,17 +72,17 @@ public abstract class BaseViewAnimator {
     /**
      * reset the view to default status
      */
-    public void reset(View target) {
-        target.setAlpha(1);
-        target.setScaleX(1);
-        target.setScaleY(1);
-        target.setTranslationX(0);
-        target.setTranslationY(0);
-        target.setRotation(0);
-        target.setRotationX(0);
-        target.setRotationY(0);
-        target.setPivotX(target.getMeasuredWidth() / 2.0f);
-        target.setPivotY(target.getMeasuredHeight() / 2.0f);
+    public void reset() {
+        mTarget.setAlpha(1);
+        mTarget.setScaleX(1);
+        mTarget.setScaleY(1);
+        mTarget.setTranslationX(0);
+        mTarget.setTranslationY(0);
+        mTarget.setRotation(0);
+        mTarget.setRotationX(0);
+        mTarget.setRotationY(0);
+        mTarget.setPivotX(mTarget.getMeasuredWidth() / 2.0f);
+        mTarget.setPivotY(mTarget.getMeasuredHeight() / 2.0f);
     }
 
     //动画过程的控制
@@ -115,11 +117,11 @@ public abstract class BaseViewAnimator {
 
     public void removeAllListener() {
         mAnimatorSet.removeAllListeners();
-        //default listener will be removed...
     }
 
     //动画其他属性的控制 set
     public BaseViewAnimator setTarget(View target) {//设置动画的作用对象
+        mTarget = target;
         mAnimatorSet.setTarget(target);
         return this;
     }
