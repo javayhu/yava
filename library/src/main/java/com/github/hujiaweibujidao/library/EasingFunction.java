@@ -143,9 +143,9 @@ public enum EasingFunction implements IFunction, Interpolator, TypeEvaluator<Flo
                 a = 1;
                 s = p / 4;
             } else {
-                s = (float) (p / MathConstants._2PI * Math.asin(1 / a));
+                s = (float) (p / TWO_PI * Math.asin(1 / a));
             }
-            return (float) (-(a * Math.pow(2, 10 * (input -= 1)) * Math.sin((input * mDuration - s) * MathConstants._2PI / p)) + 0);
+            return (float) (-(a * Math.pow(2, 10 * (input -= 1)) * Math.sin((input * mDuration - s) * TWO_PI / p)) + 0);
         }
     },
     ELASTIC_OUT {
@@ -168,9 +168,9 @@ public enum EasingFunction implements IFunction, Interpolator, TypeEvaluator<Flo
                 a = 1;
                 s = p / 4;
             } else {
-                s = (float) (p / MathConstants._2PI * Math.asin(1 / a));
+                s = (float) (p / TWO_PI * Math.asin(1 / a));
             }
-            return (float) (a * Math.pow(2, -10 * input) * Math.sin((input * mDuration - s) * MathConstants._2PI / p) + 1 + 0);
+            return (float) (a * Math.pow(2, -10 * input) * Math.sin((input * mDuration - s) * TWO_PI / p) + 1 + 0);
         }
     },
     ELASTIC_INOUT {
@@ -193,12 +193,12 @@ public enum EasingFunction implements IFunction, Interpolator, TypeEvaluator<Flo
                 a = 1;
                 s = p / 4;
             } else {
-                s = (float) (p / MathConstants._2PI * Math.asin(1 / a));
+                s = (float) (p / TWO_PI * Math.asin(1 / a));
             }
             if (input < 1) {
-                return (float) (-0.5 * (a * Math.pow(2, 10 * (input -= 1)) * Math.sin((input * mDuration - s) * MathConstants._2PI / p)) + 0);
+                return (float) (-0.5 * (a * Math.pow(2, 10 * (input -= 1)) * Math.sin((input * mDuration - s) * TWO_PI / p)) + 0);
             }
-            return (float) (a * Math.pow(2, -10 * (input -= 1)) * Math.sin((input * mDuration - s) * MathConstants._2PI / p) * .5 + 1 + 0);
+            return (float) (a * Math.pow(2, -10 * (input -= 1)) * Math.sin((input * mDuration - s) * TWO_PI / p) * .5 + 1 + 0);
         }
     },
 
@@ -339,19 +339,19 @@ public enum EasingFunction implements IFunction, Interpolator, TypeEvaluator<Flo
     SINE_IN {
         @Override
         public float getValue(float input) {
-            return (float) (-1 * Math.cos(input * MathConstants._HALF_PI) + 1);
+            return (float) (-1 * Math.cos(input * HALF_PI) + 1);
         }
     },
     SINE_OUT {
         @Override
         public float getValue(float input) {
-            return (float) Math.sin(input * MathConstants._HALF_PI);
+            return (float) Math.sin(input * HALF_PI);
         }
     },
     SINE_INOUT {
         @Override
         public float getValue(float input) {
-            return (float) (-1 * 0.5f * (Math.cos(MathConstants.PI * input) - 1));
+            return (float) (-1 * 0.5f * (Math.cos(PI * input) - 1));
         }
     },
 
@@ -393,4 +393,8 @@ public enum EasingFunction implements IFunction, Interpolator, TypeEvaluator<Flo
         return startValue + getValue(fraction) * (endValue - startValue);
     }
 
+    //几个数学常量
+    public static final float PI = (float) Math.PI;
+    public static float TWO_PI = PI * 2.0f;
+    public static float HALF_PI = PI * 0.5f;
 }
