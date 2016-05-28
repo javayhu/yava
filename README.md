@@ -19,7 +19,8 @@
 举个例子，以弹跳动画效果为例，可以直接使用`EasingFunction.BOUNCE_OUT`作为`Interpolator`或者`TypeEvaluator`来使用：
 
 第一种方式：使用线性插值器和自定义的TypeEvaluator
-```
+
+```java
 ObjectAnimator animator1 = new ObjectAnimator();
 animator1.setTarget(textView1);
 animator1.setPropertyName("translationY");
@@ -31,13 +32,53 @@ animator1.start();
 ```
 
 第二种方式：使用自定义的Interpolator和"线性估值器"
-```
+
+```java
 ObjectAnimator animator2 = new ObjectAnimator();
 animator2.setTarget(textView2);
 animator2.setPropertyName("translationY");
 animator2.setFloatValues(0f, -100f);
 animator2.setDuration(1000);
 animator2.setInterpolator(EasingFunction.BOUNCE_OUT); //这里将EasingFunction.BOUNCE_OUT作为Interpolator来使用
+animator2.setEvaluator(new FloatEvaluator());
+animator2.start();
+```
+
+如果你想使用自己定义的函数来制作动画，可以使用`Functions`的`with`方法，传入一个实现了`IFunction`接口的类就行，返回值你既可以当做`Interpolator`，也可以当做`TypeEvaluator`来使用
+
+代码示例：
+
+```java
+ObjectAnimator animator1 = new ObjectAnimator();
+animator1.setTarget(textView1);
+animator1.setPropertyName("translationY");
+animator1.setFloatValues(0f, -100f);
+animator1.setDuration(1000);
+animator1.setInterpolator(new LinearInterpolator());
+animator1.setEvaluator(Functions.with(new IFunction() {
+    @Override
+    public float getValue(float input) {
+        return input * 2 + 3;
+    }
+}));
+animator1.start();
+```
+
+或者这样：
+
+
+```java
+ObjectAnimator animator2 = new ObjectAnimator();
+animator2.setTarget(textView2);
+animator2.setPropertyName("translationY");
+animator2.setFloatValues(0f, -100f);
+animator2.setDuration(1000);
+animator2.setInterpolator(Functions.with(new IFunction() {
+    @Override
+    public float getValue(float input) {
+        return input * 2 + 3;
+    }
+}));
 animator2.setEvaluator(new FloatEvaluator());
 animator2.start();
 ```

@@ -30,7 +30,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textSize="16sp"
             android:text="Visualize Interpolator"
             android:onClick="btnInterpolator"/>
 
@@ -39,7 +38,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textSize="16sp"
             android:text="Visualize Evaluator"
             android:onClick="btnEvaluator"/>
 
@@ -48,7 +46,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textSize="16sp"
             android:text="Demo Bounce Animation"
             android:onClick="btnBounce"/>
 
@@ -57,16 +54,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textSize="16sp"
             android:text="Demo Bounce Animation 2"
             android:onClick="btnBounce2"/>
+
+        <Button
+            android:id="@+id/btnCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Demo Custom Animation"
+            android:onClick="btnCustom"/>
 
         <Button
             android:id="@+id/btnDemo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textSize="16sp"
             android:text="Demo ValueAnimator"
             android:onClick="btnDemo"/>
 

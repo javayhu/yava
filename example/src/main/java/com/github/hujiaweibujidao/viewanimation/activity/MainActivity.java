@@ -37,4 +37,8 @@ public class MainActivity extends AppCompatActivity {
     public void btnBounce2(View view) {
         startActivity(new Intent(this, Bounce2Activity.class));
     }
+
+    public void btnCustom(View view) {
+        startActivity(new Intent(this, CustomActivity.class));
+    }
 }

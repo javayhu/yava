@@ -22,6 +22,7 @@
         <activity android:name=".activity.Demo2Activity"/>
         <activity android:name=".activity.InterpolatorActivity"/>
         <activity android:name=".activity.EvaluatorActivity"/>
+        <activity android:name=".activity.CustomActivity"/>
 
     </application>
 
