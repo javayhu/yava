@@ -33,4 +33,8 @@ public class MainActivity extends AppCompatActivity {
     public void btnBounce(View view) {
         startActivity(new Intent(this, BounceActivity.class));
     }
+
+    public void btnBounce2(View view) {
+        startActivity(new Intent(this, Bounce2Activity.class));
+    }
 }

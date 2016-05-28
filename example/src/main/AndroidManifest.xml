@@ -17,6 +17,7 @@
         </activity>
 
         <activity android:name=".activity.BounceActivity"/>
+        <activity android:name=".activity.Bounce2Activity"/>
         <activity android:name=".activity.DemoActivity"/>
         <activity android:name=".activity.Demo2Activity"/>
         <activity android:name=".activity.InterpolatorActivity"/>

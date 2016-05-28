@@ -31,7 +31,7 @@ public class Demo2Activity extends AppCompatActivity {
         findViewById(R.id.buttonStart2).setVisibility(View.GONE);
 
         buttonStart = (Button) findViewById(R.id.buttonStartAll);
-        buttonStart.setText("Click to see log");
+        buttonStart.setText("Click and see your log");
 
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override

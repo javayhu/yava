@@ -14,6 +14,34 @@
 
 ![img](yava.gif)
 
+## Usage
+
+举个例子，以弹跳动画效果为例，可以直接使用`EasingFunction.BOUNCE_OUT`作为`Interpolator`或者`TypeEvaluator`来使用：
+
+第一种方式：使用线性插值器和自定义的TypeEvaluator
+```
+ObjectAnimator animator1 = new ObjectAnimator();
+animator1.setTarget(textView1);
+animator1.setPropertyName("translationY");
+animator1.setFloatValues(0f, -100f);
+animator1.setDuration(1000);
+animator1.setInterpolator(new LinearInterpolator());
+animator1.setEvaluator(EasingFunction.BOUNCE_OUT); //这里将EasingFunction.BOUNCE_OUT作为TypeEvaluator来使用
+animator1.start();
+```
+
+第二种方式：使用自定义的Interpolator和"线性估值器"
+```
+ObjectAnimator animator2 = new ObjectAnimator();
+animator2.setTarget(textView2);
+animator2.setPropertyName("translationY");
+animator2.setFloatValues(0f, -100f);
+animator2.setDuration(1000);
+animator2.setInterpolator(EasingFunction.BOUNCE_OUT); //这里将EasingFunction.BOUNCE_OUT作为Interpolator来使用
+animator2.setEvaluator(new FloatEvaluator());
+animator2.start();
+```
+
 ## Reference
 
 本项目主要参考了以下项目和内容    
