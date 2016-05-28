@@ -2,16 +2,16 @@
 
 ## Yava
 
-> Yet Another View Animation ( a simple and elegant view animation library for Android)
+> Yet Another View Animation ( a simple and elegant view animation helper library for Android)
 
 
-关于本项目的创建缘由以及实现思路，欢迎阅读我写的这三篇文章，详细介绍了Android动画中的三个重要类：`ValueAnimator`、`TypeEvaluator`和`TimeInterpolator`
+关于本项目的创建缘由以及实现思路，欢迎阅读我写的这三篇文章，详细介绍了Android动画中的三个重要类：`ValueAnimator`、`TypeEvaluator`和`TimeInterpolator`，我保证您会有所收获的 😜
 
 [当数学遇上动画：讲述`ValueAnimator`、`TypeEvaluator`和`TimeInterpolator`之间的恩恩怨怨(1)](http://hujiaweibujidao.github.io/blog/2016/05/26/when-math-meets-android-animation/)    
 [当数学遇上动画：讲述`ValueAnimator`、`TypeEvaluator`和`TimeInterpolator`之间的恩恩怨怨(2)](http://hujiaweibujidao.github.io/blog/2016/05/27/When-Math-meets-Android-Animation-2/)     
 [当数学遇上动画：讲述`ValueAnimator`、`TypeEvaluator`和`TimeInterpolator`之间的恩恩怨怨(3)](http://hujiaweibujidao.github.io/blog/2016/05/27/When-Math-meets-Android-Animation-3/)     
 
-该项目实现的功能就是将抽象的函数曲线轻松转换成立即可用的`Interpolator`和`TypeEvaluator`，并且提供了常见的30中缓动函数(Easing Functions)的实现，它们既可以当做`Interpolator`来用，又可以当做`TypeEvaluator`来用，非常方便。
+该项目实现的功能就是将抽象的函数曲线轻松转换成立即可用的`Interpolator`和`TypeEvaluator`，然后应用在Android动画中。这个项目还提供了常见的30个缓动函数(Easing Functions)的实现，它们既可以当做`Interpolator`来用，又可以当做`TypeEvaluator`来用，真的非常方便。
 
 ## Screenshot
 
@@ -86,8 +86,12 @@ animator2.setEvaluator(new FloatEvaluator());
 animator2.start();
 ```
 
-## How to import?
- 
+## How to import this library?
+
+你只需要拷贝`library`中的4个重要类到你的项目中就行了！
+
+或者
+
 1.在项目根目录的`build.gradle`文件中加入
 
 ```
@@ -199,7 +203,7 @@ public enum EasingFunction implements IFunction, Interpolator, TypeEvaluator<Flo
     //other easing functions ......
 
     //如果这个function在求值的时候需要duration作为参数的话，那么可以通过setDuration来设置，否则使用默认值
-    private float duration = 1000f;//目前只有ELASTIC***这三个是需要duration的，其他的都不需要
+    private float duration = 1000f;
 
     public float getDuration() {
         return duration;
