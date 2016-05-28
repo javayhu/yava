@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="interpolator_name"/>
+
+    <com.github.hujiaweibujidao.viewanimation.view.CursorView
+        android:id="@+id/cursor"
+        android:layout_width="20dp"
+        android:layout_height="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"/>
+
+    <com.github.hujiaweibujidao.viewanimation.view.InterpolatorView
+        android:id="@+id/view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_toLeftOf="@id/cursor"/>
+
+</RelativeLayout>
