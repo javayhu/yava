@@ -6,14 +6,14 @@
 
 关于本项目的创建缘由以及实现思路请参见我的这三篇文章
 
-[当数学遇上动画：讲述`ValueAnimator`、`TypeEvaluator`和`TimeInterpolator`之间的恩恩怨怨(1)](http://hujiaweibujidao.github.io/blog/2016/05/26/when-math-meets-android-animation/)
-[当数学遇上动画：讲述`ValueAnimator`、`TypeEvaluator`和`TimeInterpolator`之间的恩恩怨怨(2)](http://hujiaweibujidao.github.io/blog/2016/05/27/When-Math-meets-Android-Animation-2/)
-[当数学遇上动画：讲述`ValueAnimator`、`TypeEvaluator`和`TimeInterpolator`之间的恩恩怨怨(3)](http://hujiaweibujidao.github.io/blog/2016/05/27/When-Math-meets-Android-Animation-3/)
+[当数学遇上动画：讲述`ValueAnimator`、`TypeEvaluator`和`TimeInterpolator`之间的恩恩怨怨(1)](http://hujiaweibujidao.github.io/blog/2016/05/26/when-math-meets-android-animation/)    
+[当数学遇上动画：讲述`ValueAnimator`、`TypeEvaluator`和`TimeInterpolator`之间的恩恩怨怨(2)](http://hujiaweibujidao.github.io/blog/2016/05/27/When-Math-meets-Android-Animation-2/)     
+[当数学遇上动画：讲述`ValueAnimator`、`TypeEvaluator`和`TimeInterpolator`之间的恩恩怨怨(3)](http://hujiaweibujidao.github.io/blog/2016/05/27/When-Math-meets-Android-Animation-3/)     
 
 本项目主要参考了以下项目和内容    
 1.[EaseInterpolator](https://github.com/cimi-chen/EaseInterpolator)    
 2.[AnimationEasingFunctions](https://github.com/daimajia/AnimationEasingFunctions)       
-3.[easings.net](http://easings.net/)
+3.[easings.net](http://easings.net/)     
 
 ## License
 
