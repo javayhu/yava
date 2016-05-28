@@ -10,6 +10,12 @@
 [当数学遇上动画：讲述`ValueAnimator`、`TypeEvaluator`和`TimeInterpolator`之间的恩恩怨怨(2)](http://hujiaweibujidao.github.io/blog/2016/05/27/When-Math-meets-Android-Animation-2/)     
 [当数学遇上动画：讲述`ValueAnimator`、`TypeEvaluator`和`TimeInterpolator`之间的恩恩怨怨(3)](http://hujiaweibujidao.github.io/blog/2016/05/27/When-Math-meets-Android-Animation-3/)     
 
+## Screenshot
+
+![img](yava.gif)
+
+## Reference
+
 本项目主要参考了以下项目和内容    
 1.[EaseInterpolator](https://github.com/cimi-chen/EaseInterpolator)    
 2.[AnimationEasingFunctions](https://github.com/daimajia/AnimationEasingFunctions)       
