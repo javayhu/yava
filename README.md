@@ -1,3 +1,4 @@
+[![](https://www.jitpack.io/v/hujiaweibujidao/yava.svg)](https://www.jitpack.io/#hujiaweibujidao/yava)
 
 ## Yava
 
@@ -85,6 +86,26 @@ animator2.setEvaluator(new FloatEvaluator());
 animator2.start();
 ```
 
+## How to import?
+ 
+1.在项目根目录的`build.gradle`文件中加入
+
+```
+allprojects {
+    repositories {
+        ...
+        maven { url "https://www.jitpack.io" }
+    }
+}
+```
+
+2.然后在需要的`build.gradle`文件中加入依赖
+
+```
+dependencies {
+    compile 'com.github.hujiaweibujidao:yava:1.0'
+}
+```
 
 ## Documentation
 
