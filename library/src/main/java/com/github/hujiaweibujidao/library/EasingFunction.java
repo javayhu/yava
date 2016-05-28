@@ -5,7 +5,7 @@ import android.view.animation.Interpolator;
 
 
 /**
- * Common Functions
+ * 常见的30个缓动函数的实现
  *
  * @author hujiawei 16/5/27
  */
