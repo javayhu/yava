@@ -124,7 +124,7 @@ There are only four core classes in `library`.
 
 (1) `IFunction`: interface
 
-```
+```java
 /**
  * Function Interface: given input, get the value result
  */
@@ -135,7 +135,7 @@ public interface IFunction {
 
 (2)`AbstractFunction`: abstract class
 
-```
+```java
 /**
  * abstract function, you can use it as `Interpolator` or `TypeEvaluator`
  */
@@ -155,7 +155,7 @@ public abstract class AbstractFunction implements IFunction, Interpolator, TypeE
 
 (3)`Functions`: class
 
-```
+```java
 /**
  * convert any function curve to ready-to-use AbstractFunction
  */
@@ -175,7 +175,7 @@ class Functions {
 
 (4)`EasingFunction`: enum with thirty Rovert Penner's Easing Functions included
 
-```
+```java
 /**
  * thirty Rovert Penner's Easing Functions
  */

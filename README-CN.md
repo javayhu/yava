@@ -118,7 +118,7 @@ dependencies {
 
 (1) `IFunction`接口
 
-```
+```java
 /**
  * 函数接口：给定输入，得到输出
  */
@@ -129,7 +129,7 @@ public interface IFunction {
 
 (2)`AbstractFunction`抽象类
 
-```
+```java
 /**
  * 抽象函数实现，既可以当做简单函数使用，也可以当做Interpolator或者TypeEvaluator去用于制作动画
  */
@@ -149,7 +149,7 @@ public abstract class AbstractFunction implements IFunction, Interpolator, TypeE
 
 (3)`Functions`类
 
-```
+```java
 /**
  * 工具类，将自定义的函数快速封装成AbstractFunction
  */
@@ -169,7 +169,7 @@ class Functions {
 
 (4)`EasingFunction`枚举：包含了30个常见的缓动函数
 
-```
+```java
 /**
  * 常见的30个缓动函数的实现
  */
