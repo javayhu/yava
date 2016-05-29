@@ -93,7 +93,7 @@ animator2.setEvaluator(new FloatEvaluator());
 animator2.start();
 ```
 
-## How to import this library?
+## Setup
 
 Copy those four classes into your project, then you are set!
 

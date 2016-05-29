@@ -87,7 +87,7 @@ animator2.setEvaluator(new FloatEvaluator());
 animator2.start();
 ```
 
-## How to import this library?
+## Setup
 
 你只需要拷贝`library`中的4个重要类到你的项目中就行了！
 
