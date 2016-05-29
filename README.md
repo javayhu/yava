@@ -1,4 +1,4 @@
-[![](https://www.jitpack.io/v/hujiaweibujidao/yava.svg)](https://www.jitpack.io/#hujiaweibujidao/yava)
+[![jitpack](https://www.jitpack.io/v/hujiaweibujidao/yava.svg)](https://www.jitpack.io/#hujiaweibujidao/yava)  [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-yava-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/3639)
 
 ## Yava
 
