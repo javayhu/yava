@@ -2,7 +2,7 @@
 
 ## Yava
 
-> Yet Another View Animation ( a simple and elegant view animation helper library for Android)
+> Yet Another View Animation ( a simple and elegant view animation helper library for Android)    
 > It helps you convert any curve into ready-to-use `Interpolator` or `TypeEvaluator`, with 30 easing functions included.
 
 关于本项目的创建缘由以及实现思路，欢迎阅读我写的这三篇文章，详细介绍了Android动画中的三个重要类：`ValueAnimator`、`TypeEvaluator`和`TimeInterpolator`，我保证您会有所收获的 😜
