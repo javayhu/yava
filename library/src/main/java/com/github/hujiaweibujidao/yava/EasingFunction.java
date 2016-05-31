@@ -1,4 +1,4 @@
-package com.github.hujiaweibujidao.library;
+package com.github.hujiaweibujidao.yava;
 
 import android.animation.TypeEvaluator;
 import android.view.animation.Interpolator;

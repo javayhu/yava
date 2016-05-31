@@ -1,4 +1,4 @@
-package com.github.hujiaweibujidao.viewanimation;
+package com.github.hujiaweibujidao.yava;
 
 import org.junit.Test;
 

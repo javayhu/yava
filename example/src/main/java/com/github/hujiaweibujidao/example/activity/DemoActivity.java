@@ -1,4 +1,4 @@
-package com.github.hujiaweibujidao.viewanimation.activity;
+package com.github.hujiaweibujidao.example.activity;
 
 import android.animation.TypeEvaluator;
 import android.animation.ValueAnimator;
@@ -10,7 +10,7 @@ import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
 import android.widget.Button;
 
-import com.github.hujiaweibujidao.viewanimation.R;
+import com.github.hujiaweibujidao.example.R;
 
 /**
  * 演示LinearInterpolator和TypeEvaluator 与 TimeInterpolator和LinearEvaluator 的动画效果一样

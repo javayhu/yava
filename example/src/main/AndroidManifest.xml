@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.github.hujiaweibujidao.viewanimation"
+<manifest package="com.github.hujiaweibujidao.example"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.MainActivity">
+        <activity android:name="com.github.hujiaweibujidao.example.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -16,13 +16,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.BounceActivity"/>
-        <activity android:name=".activity.Bounce2Activity"/>
-        <activity android:name=".activity.DemoActivity"/>
-        <activity android:name=".activity.Demo2Activity"/>
-        <activity android:name=".activity.InterpolatorActivity"/>
-        <activity android:name=".activity.EvaluatorActivity"/>
-        <activity android:name=".activity.CustomActivity"/>
+        <activity android:name="com.github.hujiaweibujidao.example.activity.BounceActivity"/>
+        <activity android:name="com.github.hujiaweibujidao.example.activity.Bounce2Activity"/>
+        <activity android:name="com.github.hujiaweibujidao.example.activity.DemoActivity"/>
+        <activity android:name="com.github.hujiaweibujidao.example.activity.Demo2Activity"/>
+        <activity android:name="com.github.hujiaweibujidao.example.activity.InterpolatorActivity"/>
+        <activity android:name="com.github.hujiaweibujidao.example.activity.EvaluatorActivity"/>
+        <activity android:name="com.github.hujiaweibujidao.example.activity.CustomActivity"/>
 
     </application>
 

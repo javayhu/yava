@@ -17,14 +17,14 @@
         android:textStyle="bold"
         tools:text="interpolator_name"/>
 
-    <com.github.hujiaweibujidao.viewanimation.view.CursorView
+    <com.github.hujiaweibujidao.example.view.CursorView
         android:id="@+id/cursor"
         android:layout_width="20dp"
         android:layout_height="8dp"
         android:layout_alignParentRight="true"
         android:layout_marginRight="20dp"/>
 
-    <com.github.hujiaweibujidao.viewanimation.view.InterpolatorView
+    <com.github.hujiaweibujidao.example.view.InterpolatorView
         android:id="@+id/view"
         android:layout_width="100dp"
         android:layout_height="100dp"

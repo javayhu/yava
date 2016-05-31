@@ -1,4 +1,4 @@
-package com.github.hujiaweibujidao.viewanimation.adapter;
+package com.github.hujiaweibujidao.example.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,10 +12,10 @@ import android.widget.RelativeLayout;
 import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TextView;
 
-import com.github.hujiaweibujidao.viewanimation.R;
-import com.github.hujiaweibujidao.library.EasingFunction;
-import com.github.hujiaweibujidao.viewanimation.view.CursorView;
-import com.github.hujiaweibujidao.viewanimation.view.InterpolatorView;
+import com.github.hujiaweibujidao.example.R;
+import com.github.hujiaweibujidao.yava.EasingFunction;
+import com.github.hujiaweibujidao.example.view.CursorView;
+import com.github.hujiaweibujidao.example.view.InterpolatorView;
 
 import java.util.ArrayList;
 import java.util.List;

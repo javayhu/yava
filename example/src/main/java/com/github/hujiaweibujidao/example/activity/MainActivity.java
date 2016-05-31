@@ -1,11 +1,11 @@
-package com.github.hujiaweibujidao.viewanimation.activity;
+package com.github.hujiaweibujidao.example.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.github.hujiaweibujidao.viewanimation.R;
+import com.github.hujiaweibujidao.example.R;
 
 /**
  * 主界面

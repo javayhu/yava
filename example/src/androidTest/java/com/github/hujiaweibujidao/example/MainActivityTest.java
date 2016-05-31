@@ -1,4 +1,4 @@
-package com.github.hujiaweibujidao.viewanimation;
+package com.github.hujiaweibujidao.example;
 
 import android.test.AndroidTestCase;
 import android.util.Log;

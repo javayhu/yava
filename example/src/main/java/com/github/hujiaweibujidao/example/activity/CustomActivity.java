@@ -1,4 +1,4 @@
-package com.github.hujiaweibujidao.viewanimation.activity;
+package com.github.hujiaweibujidao.example.activity;
 
 import android.animation.FloatEvaluator;
 import android.animation.ObjectAnimator;
@@ -9,14 +9,14 @@ import android.view.animation.LinearInterpolator;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.github.hujiaweibujidao.library.EasingFunction;
-import com.github.hujiaweibujidao.viewanimation.R;
+import com.github.hujiaweibujidao.yava.Functions;
+import com.github.hujiaweibujidao.yava.IFunction;
+import com.github.hujiaweibujidao.example.R;
 
 /**
- * 演示LinearInterpolator和TypeEvaluator 与 TimeInterpolator和LinearEvaluator 的动画效果一样
- * 这里使用ObjectAnimator来验证，弹跳效果
+ * 演示如何自定义function拿到Interpolator或者TypeEvaluator
  */
-public class Bounce2Activity extends AppCompatActivity {
+public class CustomActivity extends AppCompatActivity {
 
     TextView textView1;
     TextView textView2;
@@ -62,7 +62,12 @@ public class Bounce2Activity extends AppCompatActivity {
         animator2.setPropertyName("translationY");
         animator2.setFloatValues(0f, -100f);
         animator2.setDuration(1000);
-        animator2.setInterpolator(EasingFunction.BOUNCE_OUT);
+        animator2.setInterpolator(Functions.with(new IFunction() {
+            @Override
+            public float getValue(float input) {
+                return input * 2 + 3;
+            }
+        }));
         animator2.setEvaluator(new FloatEvaluator());
         animator2.start();
     }
@@ -74,7 +79,12 @@ public class Bounce2Activity extends AppCompatActivity {
         animator1.setFloatValues(0f, -100f);
         animator1.setDuration(1000);
         animator1.setInterpolator(new LinearInterpolator());
-        animator1.setEvaluator(EasingFunction.BOUNCE_OUT);
+        animator1.setEvaluator(Functions.with(new IFunction() {
+            @Override
+            public float getValue(float input) {
+                return input * 2 + 3;
+            }
+        }));
         animator1.start();
     }
 }

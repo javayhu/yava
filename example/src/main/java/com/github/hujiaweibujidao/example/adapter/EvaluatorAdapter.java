@@ -1,4 +1,4 @@
-package com.github.hujiaweibujidao.viewanimation.adapter;
+package com.github.hujiaweibujidao.example.adapter;
 
 import android.animation.TypeEvaluator;
 import android.content.Context;
@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.github.hujiaweibujidao.viewanimation.R;
-import com.github.hujiaweibujidao.library.EasingFunction;
+import com.github.hujiaweibujidao.example.R;
+import com.github.hujiaweibujidao.yava.EasingFunction;
 
 import java.util.ArrayList;
 import java.util.List;

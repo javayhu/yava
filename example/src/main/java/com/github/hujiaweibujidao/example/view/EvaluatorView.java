@@ -24,7 +24,7 @@
  *
  */
 
-package com.github.hujiaweibujidao.viewanimation.view;
+package com.github.hujiaweibujidao.example.view;
 
 import android.content.Context;
 import android.graphics.Canvas;

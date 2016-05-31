@@ -1,4 +1,4 @@
-package com.github.hujiaweibujidao.library;
+package com.github.hujiaweibujidao.example;
 
 import org.junit.Test;
 

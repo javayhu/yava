@@ -1,4 +1,4 @@
-package com.github.hujiaweibujidao.viewanimation.activity;
+package com.github.hujiaweibujidao.example.activity;
 
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
@@ -11,10 +11,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.github.hujiaweibujidao.viewanimation.R;
-import com.github.hujiaweibujidao.viewanimation.adapter.EvaluatorAdapter;
-import com.github.hujiaweibujidao.library.EasingFunction;
-import com.github.hujiaweibujidao.viewanimation.view.EvaluatorView;
+import com.github.hujiaweibujidao.example.R;
+import com.github.hujiaweibujidao.example.adapter.EvaluatorAdapter;
+import com.github.hujiaweibujidao.yava.EasingFunction;
+import com.github.hujiaweibujidao.example.view.EvaluatorView;
 
 /**
  * 演示TypeEvaluator

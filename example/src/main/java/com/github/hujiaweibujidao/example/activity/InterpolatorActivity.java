@@ -1,4 +1,4 @@
-package com.github.hujiaweibujidao.viewanimation.activity;
+package com.github.hujiaweibujidao.example.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,8 +7,8 @@ import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.github.hujiaweibujidao.viewanimation.R;
-import com.github.hujiaweibujidao.viewanimation.adapter.InterpolatorAdapter;
+import com.github.hujiaweibujidao.example.R;
+import com.github.hujiaweibujidao.example.adapter.InterpolatorAdapter;
 
 /**
  * 演示Interpolator
