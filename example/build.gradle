@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "com.github.hujiaweibujidao.viewanimation"
+        applicationId "com.github.hujiaweibujidao.yava"
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 1
