@@ -114,7 +114,7 @@ allprojects {
 
 ```
 dependencies {
-    compile 'com.github.hujiaweibujidao:yava:1.0'
+    compile 'com.github.hujiaweibujidao:yava:1.0.0'
 }
 ```
 
@@ -160,7 +160,6 @@ public abstract class AbstractFunction implements IFunction, Interpolator, TypeE
  * convert any function curve to ready-to-use AbstractFunction
  */
 class Functions {
-    private static IFunction function;
 
     public static AbstractFunction with(final IFunction function) {
         return new AbstractFunction() {

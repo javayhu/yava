@@ -108,7 +108,7 @@ allprojects {
 
 ```
 dependencies {
-    compile 'com.github.hujiaweibujidao:yava:1.0'
+    compile 'com.github.hujiaweibujidao:yava:1.0.0'
 }
 ```
 
@@ -154,7 +154,6 @@ public abstract class AbstractFunction implements IFunction, Interpolator, TypeE
  * 工具类，将自定义的函数快速封装成AbstractFunction
  */
 class Functions {
-    private static IFunction function;
 
     public static AbstractFunction with(final IFunction function) {
         return new AbstractFunction() {
