@@ -1,4 +1,4 @@
-[中文说明](README-CN.md) [![jitpack](https://www.jitpack.io/v/hujiaweibujidao/yava.svg)](https://www.jitpack.io/#hujiaweibujidao/yava)  [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-yava-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/3639)  
+[中文说明](README-CN.md) [![jitpack](https://www.jitpack.io/v/hujiaweibujidao/yava.svg)](https://www.jitpack.io/#hujiaweibujidao/yava)  [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-yava-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/3639)  <a href="http://www.methodscount.com/?lib=com.github.hujiaweibujidao%3Ayava%3A1.0.0"><img src="https://img.shields.io/badge/Methods and size-core: 129 | deps: 15167 | 37 KB-e91e63.svg"/></a>    
 
 ## Yava
 
