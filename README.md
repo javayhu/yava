@@ -242,9 +242,9 @@ public enum EasingFunction implements IFunction, Interpolator, TypeEvaluator<Flo
 2.[AnimationEasingFunctions](https://github.com/daimajia/AnimationEasingFunctions)       
 3.[easings.net](http://easings.net/)     
 
-### wava
+### [wava](https://github.com/hujiaweibujidao/wava)
 
-Currently I'm planning to build another fancy animation library named `wava` for Android, follow my Github if you have any interest in it. :-)    
+Currently I'm planning to build another fancy animation library named [`wava`](https://github.com/hujiaweibujidao/wava) for Android, follow that project or my Github if you have any interest in it. 😄 
 
 ## License
 
