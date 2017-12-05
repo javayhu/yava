@@ -35,7 +35,7 @@ animator1.setEvaluator(EasingFunction.BOUNCE_OUT); //use `EasingFunction.BOUNCE_
 animator1.start();
 ```
 
-Option 2: use `EasingFunction.BOUNCE_OUT` (as `Interpolator`) with `FloatEvaluator` (`"Lineare TypeEvaluator"`)
+Option 2: use `EasingFunction.BOUNCE_OUT` (as `Interpolator`) with `FloatEvaluator` (`"Linear TypeEvaluator"`)
 
 ```java
 ObjectAnimator animator2 = new ObjectAnimator();
