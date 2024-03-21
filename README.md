@@ -8,9 +8,9 @@ This library helps you convert any curve into ready-to-use `Interpolator` or `Ty
 
 You may read the following three articles to know about the reason why I create this project, and how to implement it. They fully described the relations among `ValueAnimator`、`TypeEvaluator` and `TimeInterpolator`, hope it helps.
 
-[When Math Meets Animation(1)](http://hujiaweibujidao.github.io/blog/2016/05/26/when-math-meets-android-animation/)    
-[When Math Meets Animation(2)](http://hujiaweibujidao.github.io/blog/2016/05/27/When-Math-meets-Android-Animation-2/)     
-[When Math Meets Animation(3)](http://hujiaweibujidao.github.io/blog/2016/05/27/When-Math-meets-Android-Animation-3/)     
+[When Math Meets Animation(1)](https://javayhu.github.io/blog/2016-05-26-when-math-meets-android-animation-1)    
+[When Math Meets Animation(2)](https://javayhu.github.io/blog/2016-05-27-When-Math-meets-Android-Animation-2)     
+[When Math Meets Animation(3)](https://javayhu.github.io/blog/2016-05-28-When-Math-meets-Android-Animation-3)     
 
 ## Screenshot
 
